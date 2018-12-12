@@ -2,28 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Matt's Bio</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- <link rel="stylesheet" href="/assets/css/reset.css"> -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
+
 <body>
-    <nav class="clearfix">
+
+    <!-- should this go in a header div? -->
+    <nav>
+        <!-- enclose name and links in one div  -->
+        <!-- his container clear both no float on first use but class used later-->
         <div class="tab"><h1>Matt Sainson</h1></div>
         <div class="navlinks">
             <ul class="navitems">
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
+                <!-- he made individual links, applied border to left to all and then removed the first 
+                need to override link style-->
+                <li><a href="./index.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
             </ul>
         </div>
     </nav>
     
-    <main class="clearfix">
+    <div class="clearfix"></div>
+
+    <main>
         <section>
             <header><h2>About Me</h2></header>
-            <div class="mediv"><img id="me" src="/assets/images/me.jpg" alt="Matt Sainson" /></div>
+            <div class="mediv"><img id="me" src="./assets/images/me.jpg" alt="Matt Sainson" /></div>
             <div class="bio">
                 <p>I was born in New Jersey, moved to CA when I was 15, and I've lived in the Sacramento area ever since. I graduated from Sacramento State University with a B.A. in Mathematics but while a student started developing solutions in FileMaker Pro, and learning how to administer networks and servers. 
                 </p>
@@ -36,6 +42,8 @@
             </div>
         </section>
     </main>
+
+    <div class="clearfix"></div>
 
     <footer>
         <span>Copyright &copy; 2018</span>
